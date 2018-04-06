@@ -75,7 +75,7 @@ public class WordController : MonoBehaviour {
             }
             else
             {
-                if (!wrongLetters.Contains(guess)){
+                if (!wrongLetters.Contains(guess) && !resultWord.Contains(guess)){
                     wrongLetters = wrongLetters + " " + guess;
                     wrongLetterText.text = wrongLetters;
                     galg.Levels(level);
